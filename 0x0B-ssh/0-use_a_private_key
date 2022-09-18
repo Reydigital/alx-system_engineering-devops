@@ -2,4 +2,4 @@
 
 # This script uses ssh to connect to a server using a private key
 
-ssh -t -i ~/.ssh/holberton ubuntu@44.211.23.77
+ssh -t -i ~/.ssh/school ubuntu@44.211.23.77
