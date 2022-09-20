@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script that setup a nginx web server on our server + redirection.
+
+apt update -y && apt upgrade -y
+apt install nginx -y
+
+# Index page
+
+echo "Hello World!" >/var/www/html/index.nginx-debian.html
+
+# Redirect to Maarey's youtube channel
+
+sed -i '/listen \[::\]:80 default_server;/a\ rewrite ^\/redirect_me https://www.youtube.com/channel/UCg9ObXjJdiXyZECPnqqsDfg permanent;' /etc/nginx/sites-available/default
+
+service nginx restart
