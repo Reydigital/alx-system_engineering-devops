@@ -8,7 +8,7 @@ number of subscribers for a given subreddit. """
 
 import requests
 
-headers = {"User-Agent": "ubuntu:hbtn:v1.0 (by /u/piroli_)"}
+headers = {"User-Agent": "ubuntu:hbtn:v1.0 (by /u/reydigi_)"}
 
 
 
